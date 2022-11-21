@@ -1,15 +1,15 @@
 import javax.swing.*;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String args[]){
         JFrame obj = new JFrame();
-        //Gameplay gamePlay = new Gameplay();
-        obj.setBounds(10,10,700,600);
-        obj.setTitle("Breakout ball");
+        GamePlay gameplay = new GamePlay();
+        obj.setBounds(10, 10, 700, 600);
+        obj.setTitle("Breaker Ball");
+//        obj.setResizable(false);
         obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //obj.add(gamePlay);
+        obj.add(gameplay);
         obj.setVisible(true);
-
 
 
     }

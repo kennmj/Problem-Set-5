@@ -1,5 +1,3 @@
-package brickBracker;
-
 import java.awt.*;
 
 public class MapGenerator {
