@@ -185,7 +185,7 @@ public class GamePlayThirdLevel extends JPanel implements KeyListener, ActionLis
                 delay = 6;
                 timer = new Timer (delay, this);
                 score = 0;
-                totalBricks = 21;
+                totalBricks = 45;
                 map = new MapGenerator(3,7);
 
                 repaint();
