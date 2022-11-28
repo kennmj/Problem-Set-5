@@ -85,10 +85,10 @@ public class GamePlaySecLevel extends JPanel implements KeyListener, ActionListe
             ballYdir = 0;
             g.setColor(Color.red);
             g.setFont(new Font("serif", Font.BOLD, 30));
-            g.drawString("Game Over, Scores: " + score,190,300);
+            g.drawString("Game Over, Score: " + score, 190, 300);
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press R to Restart ",230,350);
+            g.drawString("Press (R) to Restart", 230, 350);
         }
 
         g.dispose();
