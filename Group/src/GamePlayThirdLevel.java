@@ -7,9 +7,10 @@ import java.awt.event.KeyListener;
 
 public class GamePlayThirdLevel extends JPanel implements KeyListener, ActionListener {
 
+    //initialize variables
     private boolean play = false;
     private int score = 210;
-    private int totalBricks = 21;
+    private int totalBricks = 28;
     private int delay = 4;
 
     private Timer timer;
@@ -76,8 +77,8 @@ public class GamePlayThirdLevel extends JPanel implements KeyListener, ActionLis
 
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press Enter for next level ",230,400);
-            g.drawString("Press R to Restart ",230,350);
+            g.drawString("Press (Enter) for next level ",230,400);
+            g.drawString("Press (R) to Restart ",230,350);
         }
 
         if(ballposY > 570){
@@ -86,10 +87,10 @@ public class GamePlayThirdLevel extends JPanel implements KeyListener, ActionLis
             ballYdir = 0;
             g.setColor(Color.red);
             g.setFont(new Font("serif", Font.BOLD, 30));
-            g.drawString("Game Over, Scores: " + score,190,300);
+            g.drawString("Game Over, Score: " + score,190,300);
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press R to Restart ",230,350);
+            g.drawString("Press (R) to Restart ",230,350);
         }
 
         g.dispose();
