@@ -12,8 +12,6 @@ public class Main {
         obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         obj.add(gamePlay);
         obj.setVisible(true);
-
-
     }
     public static void secLevel(){
         JFrame sec = new JFrame();
