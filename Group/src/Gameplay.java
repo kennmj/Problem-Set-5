@@ -193,6 +193,9 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
                 repaint();
             }
         }
+        if(e.getKeyCode() == KeyEvent.VK_1){
+            Main.firstLevel();
+        }
         if(e.getKeyCode() == KeyEvent.VK_2){
             Main.secLevel();
         }

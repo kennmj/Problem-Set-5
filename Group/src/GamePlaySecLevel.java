@@ -75,8 +75,8 @@ public class GamePlaySecLevel extends JPanel implements KeyListener, ActionListe
 
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press Enter for next level ",230,400);
-            g.drawString("Press R to Restart ",230,350);
+            g.drawString("If you lost hit 1 to restart",230,400);
+            g.drawString("Press 3 for the next level",230,350);
         }
 
         if(ballposY > 570){
@@ -189,6 +189,9 @@ public class GamePlaySecLevel extends JPanel implements KeyListener, ActionListe
 
                 repaint();
             }
+        }
+        if(e.getKeyCode() == KeyEvent.VK_1){
+            Main.firstLevel();
         }
         if(e.getKeyCode() == KeyEvent.VK_3){
             Main.thirdLevel();

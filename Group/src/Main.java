@@ -2,6 +2,9 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
+        firstLevel();
+    }
+    public static void firstLevel(){
         JFrame obj = new JFrame();
         Gameplay gamePlay = new Gameplay();
         obj.setBounds(10,10,700,600);
