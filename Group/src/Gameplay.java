@@ -78,7 +78,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
 
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press 2 for next level ",230,400);
+            g.drawString("Press Enter for next level ",230,400);
             g.drawString("Press R to Restart ",230,350);
         }
 
@@ -175,28 +175,10 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
                 moveLeft();
             }
         }
-        if(e.getKeyCode() == KeyEvent.VK_ENTER){
-            if(!play){
-                play = true;
-                ballposX = 120;
-                ballposY = 350;
-                ballXdir = -1;
-                ballYdir = -2;
-                playerX = 310;
-                level ++;
-                delay = 6;
-                timer = new Timer (delay, this);
-                score = 0;
-                totalBricks = 21;
-                map = new MapGenerator(3,7);
-
-                repaint();
-            }
-        }
-        if(e.getKeyCode() == KeyEvent.VK_1){
+        if(e.getKeyCode() == KeyEvent.VK_R){
             Main.firstLevel();
         }
-        if(e.getKeyCode() == KeyEvent.VK_2){
+        if(e.getKeyCode() == KeyEvent.VK_ENTER){
             Main.secLevel();
         }
 

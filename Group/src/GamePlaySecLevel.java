@@ -75,8 +75,8 @@ public class GamePlaySecLevel extends JPanel implements KeyListener, ActionListe
 
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("If you lost hit 1 to restart",230,400);
-            g.drawString("Press 3 for the next level",230,350);
+            g.drawString("If you lost hit (R) to restart",230,400);
+            g.drawString("Press Enter for the next level",230,350);
         }
 
         if(ballposY > 570){
@@ -172,28 +172,11 @@ public class GamePlaySecLevel extends JPanel implements KeyListener, ActionListe
                 moveLeft();
             }
         }
-        if(e.getKeyCode() == KeyEvent.VK_ENTER){
-            if(!play){
-                play = true;
-                ballposX = 120;
-                ballposY = 350;
-                ballXdir = -1;
-                ballYdir = -2;
-                playerX = 310;
-                level ++;
-                delay = 6;
-                timer = new Timer (delay, this);
-                score = 0;
-                totalBricks = 21;
-                map = new MapGenerator(3,7);
 
-                repaint();
-            }
-        }
-        if(e.getKeyCode() == KeyEvent.VK_1){
+        if(e.getKeyCode() == KeyEvent.VK_R){
             Main.firstLevel();
         }
-        if(e.getKeyCode() == KeyEvent.VK_3){
+        if(e.getKeyCode() == KeyEvent.VK_ENTER){
             Main.thirdLevel();
         }
 
