@@ -194,7 +194,7 @@ public class GamePlayThirdLevel extends JPanel implements KeyListener, ActionLis
 //            }
 //        }
         if(e.getKeyCode() == KeyEvent.VK_R){
-            Main.secLevel();
+            Main.firstLevel();
         }
 
     }
