@@ -78,8 +78,8 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
 
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press Enter for next level ",230,400);
-            g.drawString("Press R to Restart ",230,350);
+            g.drawString("Press (Enter) for next level ",230,400);
+            g.drawString("Press (R) to Restart ",230,350);
         }
 
         if(ballposY > 570){
