@@ -77,7 +77,7 @@ public class GamePlayThirdLevel extends JPanel implements KeyListener, ActionLis
 
 
             g.setFont(new Font("serif", Font.BOLD, 20));
-            g.drawString("Press (Enter) for next level ",230,400);
+            //g.drawString("Press (Enter) for next level ",230,400);
             g.drawString("Press (R) to Restart ",230,350);
         }
 
@@ -174,24 +174,25 @@ public class GamePlayThirdLevel extends JPanel implements KeyListener, ActionLis
                 moveLeft();
             }
         }
-        if(e.getKeyCode() == KeyEvent.VK_ENTER){
-            if(!play){
-                play = true;
-                ballposX = 120;
-                ballposY = 350;
-                ballXdir = -1;
-                ballYdir = -2;
-                playerX = 310;
-                level ++;
-                delay = 6;
-                timer = new Timer (delay, this);
-                score = 0;
-                totalBricks = 45;  //new bricks number
-                map = new MapGenerator(3,7);
-
-                repaint();
-            }
-        }
+        // Commented out because there is no level 4
+//        if(e.getKeyCode() == KeyEvent.VK_ENTER){
+//            if(!play){
+//                play = true;
+//                ballposX = 120;
+//                ballposY = 350;
+//                ballXdir = -1;
+//                ballYdir = -2;
+//                playerX = 310;
+//                level ++;
+//                delay = 6;
+//                timer = new Timer (delay, this);
+//                score = 0;
+//                totalBricks = 45;  //new bricks number
+//                map = new MapGenerator(3,7);
+//
+//                repaint();
+//            }
+//        }
         if(e.getKeyCode() == KeyEvent.VK_R){
             Main.secLevel();
         }
